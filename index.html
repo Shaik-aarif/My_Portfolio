@@ -21,8 +21,7 @@
 
     <!-- custom css style sheet -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/partials/_global.css">
-    <link rel="stylesheet" href="./css/partials/_variables.css">
+    
 </head>
 <body>
     
@@ -84,8 +83,12 @@
       <h4 class="title-text text-uppercase">a Computer Science Student</h4>
       <div class="site-buttons">
         <div class="d-flex flex-row flexwrap">
-          <button type="button" class="btn button primary-button mr-4 text-uppercase ">Hire Me</button>
-          <button type="button" class="btn button secondary-button text-uppercase btn-dark">Get Cv</button>
+          <a href="mailto:0222learning@gmail.com" class="text-uppercase btn p-button mr-4 ">Hire me
+          </a>
+          <a href="mailto:0222learning@gmail.com" class="text-uppercase btn s-button mr-4 ">Get Cv
+          </a>
+          <!-- <button type="button" class="btn button primary-button mr-4 text-uppercase ">Hire Me</button> -->
+          <!-- <button type="button" class="btn button secondary-button text-uppercase btn-dark">Get Cv</button> -->
         </div>
       </div>
     </div>
@@ -133,7 +136,7 @@
         </p>
            
       </div>
-        <button class="btn button primary-button text-uppercase">Download CV</button>
+        <!-- <button class="btn button primary-button text-uppercase">Download CV</button> -->
     </div>
 
 
@@ -229,41 +232,97 @@
       <button type="button" class="active red" id="btn1">ALL</button>
       <button type="button" data-filter=".latest" class="">Latest</button>
       <button type="button" data-filter=".favourite" class="">favourite</button>
-      <button type="button" class="">Upcoming</button>
+      <button type="button"  data-filter=".upcoming" class="">Upcoming</button>
     </div>
     <div class="row grid">
-      <div class="col-lg-4 col-md-6 element-item latest">
+      <div class="col-lg-4 col-md-6 element-item latest favourite">
         <div class="our-project">
           <div class="img">
-            <a   target="_blank"  href="https://www.w3schools.com/jquery/jquery_events.asp" >
-              <img src="./img/logo1.png" alt="project-1">
+            <a   target="_blank"  href="https://shaik-aarif.github.io/Temperature_converter/" >
+              <img src="./img/projects/temp_converter.jpg" alt="project-1">
             </a >
           </div>
           <div class="title py-4">
-            <h4 class="text-uppercase">Poject-1</h4>
-            <span class="text-secondary">Latest , p1</span>
+            <h4 class="text-uppercase">Temperature Converter</h4>
+            <span class="text-secondary">Latest , Favourite  </span>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 element-item latest">
         <div class="our-project">
           <div class="img">
-            <img src="./img/logo1.png" alt="project-2">
+            <a target="_blank" href="https://shaik-aarif.github.io/ShopEasy_bootstraapp/">
+              <img src="./img/projects/landingpage.jpg" alt="project-2">
+            </a>
           </div>
           <div class="title py-4">
-            <h4 class="text-uppercase">Poject-2</h4>
-            <span class="text-secondary">Latest , p1</span>
+            <h4 class="text-uppercase">shopeasy</h4>
+            <span class="text-secondary">Latest </span>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 element-item favourite">
         <div class="our-project">
           <div class="img">
-            <img src="./img/logo1.png" alt="project-3">
+            <a target="_blank" href="https://shaik-aarif.github.io/Todo_App/">
+              <img class="todo" src="./img/projects/todo.jpg" alt="project-3">
+            </a>
+          </div>
+          <div class="title py-4 todo">
+            <h4 class="text-uppercase">Todo</h4>
+            <span class="text-secondary">Favourite </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 element-item ">
+        <div class="our-project">
+          <div class="img">
+            <a target="_blank" href="https://shaik-aarif.github.io/Personal-website-udemy/">
+              <img src="./img/projects/p1.jpg" alt="project-4">
+            </a>
           </div>
           <div class="title py-4">
-            <h4 class="text-uppercase">Poject-3</h4>
-            <span class="text-secondary">favourite , p1</span>
+            <h4 class="text-uppercase">Portfolio -1</h4>
+            <span class="text-secondary"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 element-item ">
+        <div class="our-project">
+          <div class="img">
+            <a target="_blank" href="https://shaik-aarif.github.io/Drum-kit-Udemy/">
+              <img src="./img/projects/drumkit.jpg" alt="project-5">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">drumKit</h4>
+            <span class="text-secondary"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 element-item favourite">
+        <div class="our-project">
+          <div class="img">
+            <a target="_blank" href="https://shaik-aarif.github.io/My_Portfolio/">
+              <img class="mp" src="./img/projects/main-portfolioo.jpg" alt="project-6">
+            </a>
+          </div>
+          <div class="title py-4 mp">
+            <h4 class="text-uppercase">Main-portfolio</h4>
+            <span class="text-secondary">favourite </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 element-item upcoming" id="upcoming">
+        <div class="our-project">
+          <div class="img">
+            <a  href="#projects">
+              <img src="./img/projects/secret.jpg" alt="project-7">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Shhhhhh🤫</h4>
+            <span class="text-secondary">Upcoming </span>
           </div>
         </div>
       </div>
@@ -384,8 +443,7 @@
       <div class="row">
           <div class="col-lg-12 text-center contact-title">
               <h4 class="text-uppercase">Get in touch </h4>
-              <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-                  consequuntur.</p>
+              <p class="para">I would welcome the opportunity to elaborate on any aspect of myself that you would like to know more about.</p>
           </div>
       </div>
       <div class="d-sm-flex justify-content-center">

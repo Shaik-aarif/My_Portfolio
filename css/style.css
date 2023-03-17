@@ -1,15 +1,11 @@
-/* importing fonts  from font.css*/
 
-@import url(./fonts.css);
-
-/* importing variables.css */
-@import url(./partials/_variables.css);
-
-
-/* importing global variables */
-/* @import url(./partials/_global.css); */
-
-/* ++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++ global  css starts  ++++++++++++++++++++++++++++++++++++++++++*/
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+} 
 .title-text{
     font: normal bold 50px/40px ;
     font-size: 2.5rem;
@@ -20,39 +16,6 @@
 .text-uppercase{
     text-transform: uppercase;
 }
-
-/* buttons */
-
-.button{
-    font:normal 500px 16px/20px ;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-.button.primary-button{
-    
-    background-color: red;
-    color: #fff;
-    transition: background .5s ease;
-   
-}
-.button.primary-button:hover{
-    background-color: #fff;
-    color: red;
-    border-color: red;
-}
-
-.button.secondary-button{
-    background-color: #fff;
-    color: red;
-    border: 1px solid red;
-}
-.button.secondary-button:hover{
-    background-color: red;
-    color: #fff;
-} 
-
 p.para{
     color: #777777;
 }
@@ -67,7 +30,6 @@ p.para{
     color: #fff;
 }
 
-
 .navbar_fixed{
     position: fixed;
     width: 100%;
@@ -79,15 +41,15 @@ p.para{
     z-index: 999;
     transition: background 0.4s ease;
 }
-
-/* ++++++++++++++++++++++++++++++++++++++++ */
-
+/* ++++++++++++++++++++++++++++++++++++++++ global  css ends  ++++++++++++++++++++++++++++++++++++++++++*/
 
 
 
 
 
-/* Navbar start */
+
+
+/* +++++++++++++++++++++++++Navbar start+++++++++++++++++++++++++ */
 
 .navbar-brand{
 
@@ -120,10 +82,10 @@ p.para{
 }
 
 
-/* Navbar end */
+/* +++++++++++++++++++++++++Navbar end +++++++++++++++++++++++++*/
 
 
-/* main section start  */
+/*+++++++++++++++++++++++++ main section start +++++++++++++++++++++++++ */
 
 #main{
     padding: 1% 15%;
@@ -150,23 +112,53 @@ p.para{
 }
 .container .title h4{
     font-size: 1.1rem;
+    font-weight: bold;
 }
 .container .banner-img{
     padding-top: 4%;
     padding-left: 100px;
 }
-.primary-button{
+.main .site-buttons a.p-button{
+    background-color: red;
+    color: white;
     margin-top: 20px;
-    margin-right: 30px;
+    margin-right: 2rem;
+    padding: 3px 7px;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background .3s ease;
 }
-.secondary-button{
-    margin-top:20px ;
+.main .site-buttons a.p-button:hover{
+    background-color: #fff;
+    color: red;
+    border-color: red;
+    transform: scale(1.04);
+}
+.main .site-buttons a.s-button{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    margin-top: 20px;
+    padding: 3px 13px;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background .3s ease;
+}
+.main .site-buttons a.s-button:hover{
+    background-color: red;
+    color: #fff;
+    transform: scale(1.04);
+
 }
 
-/* main section end  */
+/* +++++++++++++++++++++++++main section end +++++++++++++++++++++++++ */
 
 
-/*about section starts*/
+/*+++++++++++++++++++++++++about section starts+++++++++++++++++++++++++*/
 .about-space{
     padding: 7% 0% ;
 }
@@ -200,10 +192,10 @@ p.para{
    margin-left: 350px;
 }
 
-/*about section ends*/
+/*+++++++++++++++++++++++++ about section ends+++++++++++++++++++++++++ */
 
 
-/*skills section starts*/
+/*+++++++++++++++++++++++++skills section starts+++++++++++++++++++++++++*/
 
 .skills-area{
     padding: 5% 8%;
@@ -212,7 +204,6 @@ p.para{
     background-repeat: no-repeat;
     background-size: 1380px 676px;
     background-position: left top;
-    /* rotate: y 180deg; */
 }
 .skills-area img{
     width: 50px;
@@ -225,7 +216,6 @@ p.para{
     font-family: 'Roboto', sans-serif;
 }
 .skills-area .skills{
-    /* background-color:rgba(201, 41, 41, 0.09); */
     height: 340px;
     margin: 10px 0px;
     padding:  15% 5% ;
@@ -238,8 +228,6 @@ p.para{
     box-shadow:0 10px 30px rgba(57 ,56 ,61,0.205);
     box-shadow: 0 10px 30px rgba(24, 23, 25, 0.598);
     transform: scale(1.04);
-    /* box-shadow: 0 10px 30px rgba(201, 41, 41, 0.2); */
-
 }
 .skills-area .skills-list .card-title{
     color: black;
@@ -250,10 +238,10 @@ p.para{
 .container.skills-list{
     padding: 0 5%;
 }
-/*skills section ends*/
+/*+++++++++++++++++++++++++skills section ends+++++++++++++++++++++++++*/
 
 
-/*projects  section starts*/
+/*+++++++++++++++++++++++++projects  section starts+++++++++++++++++++++++++*/
 
 .project-area{
     padding: 5% 15%;
@@ -270,45 +258,58 @@ p.para{
 }
 
 .title h4{
-    font: normal 700 25px/12px var(--roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 10px;
+    font-family: 'Roboto', sans-serif;
+
 }
 .project-title h1{
-    font: normal bold 39px/40px var(--roboto);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 10px;
+    font-family: 'Roboto', sans-serif;
    
 }
+.project-area .row.grid{
+    transform: scale(1);
+}
+.project-area .title.py-4.todo ,.project-area .title.py-4.mp {
+    margin-left: 47px;
+}
+.project-area .our-project .img a img{
+    transition: all 0.2s ease;
 
-.project-area .element-item{
-   border: 5px solid white;
+}
+
+.project-area .our-project .img  img.todo ,.project-area .our-project .img  img.mp{
+    margin-left: 47px;
 }
 .project-area .our-project .img a:hover img{
-    filter: brightness(1.2)  drop-shadow(1px 8px 30px #b1afaf);
+    box-shadow: 0 4px 15px rgba(0, 0,0, 0.3);
+    transform: scale(1.05);
+    filter: brightness(1.1)  drop-shadow(1px 8px 30px #b1afaf);
 }
 
 
-/*projects  section ends*/
+/* +++++++++++++++++++++++++projects  section ends +++++++++++++++++++++++++*/
 
 
-/*profiles  section starts*/
+/*+++++++++++++++++++++++++ profiles  section starts+++++++++++++++++++++++++ */
 
 .profiles-area{
     padding: 5% 20%;
 }
-
-
-
 .profiles-area .profile-text p{
     padding: 5px 10px ;
 }
-
-
-
-
 .profiles-area .profile-item{
     background: #ffffff10;
     box-shadow:0 10px 30px rgba(57 ,56 ,61,0.205);
     margin: 3rem 5px;
 }
-
 .profiles-area .profile-item a {
     color: red;
     height: 30px;
@@ -325,7 +326,6 @@ p.para{
 
     
 }
-
 .profiles-area .profile-item .profile-img{
     padding: 1rem;
 }
@@ -333,11 +333,9 @@ p.para{
     height: 80px;
     width: 300px;
 }
-
 .profiles-area .profile-item .profile-text{
     padding-top: 2rem;
 }
-
 .profiles-area .profile-item .profile-text h4{
     font-style: normal;
     font-weight: 500;
@@ -351,11 +349,9 @@ p.para{
 }
 
 .profiles-area .owl-carousel .profile-item.row{
-    /* background-color: pink; */
     display: flex;
     justify-content: center;
     padding: 0 1rem;
-    /* margin: 0 5px; */
 }
 
 .profiles-area .owl-carousel .owl-dots .owl-dot.active span{
@@ -364,9 +360,9 @@ p.para{
     height: 12px;
 }
 
-/*profiles  section ends*/
+/*+++++++++++++++++++++++++profiles  section ends+++++++++++++++++++++++++*/
 
-/*contact  section starts*/
+/*+++++++++++++++++++++++++contact  section starts+++++++++++++++++++++++++*/
 
 .contact-bgc{
     background-color: red;
@@ -415,14 +411,10 @@ p.para{
     
 }
 
-
-/*contact  section ends*/
-
+/*+++++++++++++++++++++++++contact  section ends+++++++++++++++++++++++++*/
 
 
-
-
-/*footer  section starts*/
+/*+++++++++++++++++++++++++footer  section starts+++++++++++++++++++++++++*/
 
 .footer-area{
     padding: 5rem 0;
@@ -448,7 +440,7 @@ footer.footer-area .social a:hover > i{
     color: #000;
     transform: scale(1.24);
 }
-/*footer  section ends*/
+/*+++++++++++++++++++++++++footer  section ends+++++++++++++++++++++++++*/
 
 
 
