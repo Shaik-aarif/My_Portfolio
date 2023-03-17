@@ -13,7 +13,7 @@
 .title-text{
     font: normal bold 50px/40px ;
     font-size: 2.5rem;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
@@ -25,7 +25,7 @@
 
 .button{
     font:normal 500px 16px/20px ;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     position: relative;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -105,7 +105,7 @@ p.para{
     font-weight: 500;
     font-size: 13px;
     line-height: 2px;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     padding: 27px;
     color: #000;
@@ -128,7 +128,7 @@ p.para{
 #main{
     padding: 1% 15%;
     padding-top: 7%;
-    font-family: var(--roboto);
+    font-family: 'Roboto', sans-serif;
     
 }
 .banner-img img{
@@ -191,7 +191,7 @@ p.para{
 .about-space .about-title .title-text > span{
     display: block;
     line-height: 50px;
-    font-family: var(--roboto);
+    font-family: 'Roboto', sans-serif;
 }
 .about-space .paragraph{
     height: 300px;
@@ -222,7 +222,7 @@ p.para{
 }
 .skills-area .skills-title .title-text{
     font-size: 2.5rem;
-    font-family: var(--roboto);
+    font-family: 'Roboto', sans-serif;
 }
 .skills-area .skills{
     /* background-color:rgba(201, 41, 41, 0.09); */
@@ -245,7 +245,7 @@ p.para{
     color: black;
     padding-bottom:7px ;
     font-size: medium;
-    font-family: var(--roboto);
+    font-family: 'Roboto', sans-serif;
 }
 .container.skills-list{
     padding: 0 5%;
@@ -339,7 +339,11 @@ p.para{
 }
 
 .profiles-area .profile-item .profile-text h4{
-    font: normal 500 21px/ 20px var(--roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .profiles-area .profile-item .profile-text p{
@@ -383,7 +387,7 @@ p.para{
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     color: whitesmoke;
 }
 
@@ -429,7 +433,7 @@ p.para{
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
 
 }
 
