@@ -3,6 +3,9 @@
 
 .title-text{
     font: normal bold 50px/40px var(--roboto);
+    font-size: 2.5rem;
+    font-family: var(--roboto);
+    font-weight: bold;
 }
 
 .text-uppercase{
@@ -18,12 +21,11 @@
     border-radius: 4px;
 }
 .button.primary-button{
-    /* background: var(--gradient-color); */
-    /* background-clip: padding-box; */
+    
     background-color: var(--primary-color);
     color: #fff;
     transition: background .5s ease;
-    /* box-sizing: var(--box-shadow); */
+   
 }
 .button.primary-button:hover{
     background-color: #fff;
@@ -55,11 +57,6 @@ p.para{
     color: #fff;
 }
 
-.title-text{
-    font-size: 2.5rem;
-    font-family: var(--roboto);
-    font-weight: bold;
-}
 
 .navbar_fixed{
     position: fixed;
