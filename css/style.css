@@ -1,0 +1,375 @@
+/* importing fonts  from font.css*/
+
+@import url(./fonts.css);
+
+/* importing variables.css */
+@import url(./partials/_variables.css);
+
+/* importing global variables */
+
+@import url(./partials/_global.css);
+
+
+
+/* Navbar start */
+
+.navbar-brand{
+
+    padding: 0rem 32px;
+    color: #ff0000;
+}
+
+.header-space .navbar{
+    padding: 5px 10% 0 ;
+}
+
+.header-space .navbar .nav-link{
+    text-align: right;
+    font:normal 500 13px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 27px;
+    color: #000;
+}
+#navbarNav .nav-link.active{
+    color: #ff0000;
+    /* background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text ; */
+}
+#navbarNav .nav-link:hover{
+    color: #ff0000;
+    /* background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text ; */
+}
+
+
+/* Navbar end */
+
+
+/* main section start  */
+
+#main{
+    padding: 1% 15%;
+    padding-top: 7%;
+    font-family: var(--roboto);
+    
+}
+.banner-img img{
+    height:310px;
+    width: 310px;
+}
+.container .title h3{
+    font-size: 2rem;
+    padding-top: 20%;
+    font-weight: 500;
+}
+
+.container .title h1{
+    font-size: 2.5rem;
+    color: #ff0000;
+}
+.container .title span{
+    color: #000;    
+}
+.container .title h4{
+    font-size: 1.1rem;
+}
+.container .banner-img{
+    padding-top: 4%;
+    padding-left: 100px;
+}
+.primary-button{
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.secondary-button{
+    margin-top:20px ;
+}
+
+/* main section end  */
+
+
+/*about section starts*/
+.about-space{
+    padding: 7% 0% ;
+}
+
+.about-space .intro-img img{
+    height: fit-content;
+    width: fit-content;
+    rotate: y 180deg;
+    position: relative;
+    transform: scale(0.7);
+    transition: all 0.3s ease;
+    top: 100px;
+    left: 50px;
+}
+.about-space .intro-img img:hover{
+    transform: scale(0.75);
+}
+.about-space .about-title .title-text{
+    font-size: 2.5rem;
+}
+
+.about-space .about-title .title-text > span{
+    display: block;
+    line-height: 50px;
+    font-family: var(--roboto);
+}
+.about-space .paragraph{
+    height: 300px;
+}
+.about-space button{
+   margin-left: 350px;
+}
+
+/*about section ends*/
+
+
+/*skills section starts*/
+
+.skills-area{
+    padding: 5% 8%;
+    background-color: red;
+    background-image: url(../img/bgdesin-3.png);
+    background-repeat: no-repeat;
+    background-size: 1380px 676px;
+    background-position: left top;
+    /* rotate: y 180deg; */
+}
+.skills-area img{
+    width: 50px;
+}
+.skills-area i{
+    font-size: 45px;
+}
+.skills-area .skills-title .title-text{
+    font-size: 2.5rem;
+    font-family: var(--roboto);
+}
+.skills-area .skills{
+    /* background-color:rgba(201, 41, 41, 0.09); */
+    height: 340px;
+    margin: 10px 0px;
+    padding:  15% 5% ;
+    transition: box-shadow .5s ease;
+    border-radius: 3%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+.skills-area .skills:hover{
+    box-shadow: var(--box-shadow);
+    box-shadow: 0 10px 30px rgba(24, 23, 25, 0.598);
+    transform: scale(1.04);
+    /* box-shadow: 0 10px 30px rgba(201, 41, 41, 0.2); */
+
+}
+.skills-area .skills-list .card-title{
+    color: black;
+    padding-bottom:7px ;
+    font-size: medium;
+    font-family: var(--roboto);
+}
+.container.skills-list{
+    padding: 0 5%;
+}
+/*skills section ends*/
+
+
+/*projects  section starts*/
+
+.project-area{
+    padding: 5% 15%;
+}
+
+.project-area .button-group button{
+    background: transparent;
+    border: none;
+    font:normal 500 16px/130px var(--roboto);
+    text-transform: uppercase; 
+}
+.project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+.project-title h1{
+    font: normal bold 39px/40px var(--roboto);
+   
+}
+
+.project-area .element-item{
+   border: 5px solid white;
+}
+.project-area .our-project .img a:hover img{
+    filter: brightness(1.2)  drop-shadow(1px 8px 30px #b1afaf);
+}
+
+
+/*projects  section ends*/
+
+
+/*profiles  section starts*/
+
+.profiles-area{
+    padding: 5% 20%;
+}
+
+
+
+.profiles-area .profile-text p{
+    padding: 5px 10px ;
+}
+
+
+
+
+.profiles-area .profile-item{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 5px;
+}
+
+.profiles-area .profile-item a {
+    color: red;
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+}
+.profiles-area .profile-item i{
+    font-size: 22px;
+}
+.profiles-area .profile-item .clik-here{
+    
+    margin-left:30px;
+    height: fit-content;
+
+    
+}
+
+.profiles-area .profile-item .profile-img{
+    padding: 1rem;
+}
+.profiles-area .profile-item .profile-img img{
+    height: 80px;
+    width: 300px;
+}
+
+.profiles-area .profile-item .profile-text{
+    padding-top: 2rem;
+}
+
+.profiles-area .profile-item .profile-text h4{
+    font: normal 500 21px/ 20px var(--roboto);
+}
+
+.profiles-area .profile-item .profile-text p{
+    font-size: 12px;
+}
+
+.profiles-area .owl-carousel .profile-item.row{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    /* margin: 0 5px; */
+}
+
+.profiles-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+/*profiles  section ends*/
+
+/*contact  section starts*/
+
+.contact-bgc{
+    background-color: red;
+    
+}
+
+.contact-us-area{
+    padding: 5% 10%;
+}
+.contact-us-area .contact{
+    background-color: red;
+    padding: 1rem 0;
+    margin: 1rem auto;
+}
+
+.contact-us-area .contact .contact-title h4{
+    font: normal 700 30px/ 30px var(--roboto);
+    color: whitesmoke;
+}
+
+.contact-us-area .contact .contact-title p{
+    color: whitesmoke;
+    padding: 0rem 4rem;
+}
+
+
+
+
+
+.btn--contact{
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+}
+.btn--contact:hover{
+    background-color: #fff;
+    transform: scale(1.04);
+    
+}
+
+
+/*contact  section ends*/
+
+
+
+
+
+/*footer  section starts*/
+
+.footer-area{
+    padding: 5rem 0;
+}
+
+.footer-area .social h5{
+    font: normal 700 30px/ 30px var(--roboto);
+
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--primary-color);
+    transition: all 0.2s ease;
+}
+
+footer.footer-area .social a:hover > i{
+    color: #000;
+    transform: scale(1.24);
+}
+/*footer  section ends*/
+
+
+
+
+
+
+
+
+
+

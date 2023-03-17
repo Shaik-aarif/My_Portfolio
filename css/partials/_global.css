@@ -1,0 +1,73 @@
+@import url(./partials/_variables.css);
+
+
+.title-text{
+    font: normal bold 50px/40px var(--roboto);
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* buttons */
+
+.button{
+    font:normal 500px 16px/20px var(--roboto);
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.button.primary-button{
+    /* background: var(--gradient-color); */
+    /* background-clip: padding-box; */
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: background .5s ease;
+    /* box-sizing: var(--box-shadow); */
+}
+.button.primary-button:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+    border-color: red;
+}
+
+.button.secondary-button{
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+}
+.button.secondary-button:hover{
+    background-color: red;
+    color: #fff;
+} 
+
+p.para{
+    color: var(--text-color);
+}
+
+.red{
+    color: red;
+}
+.black{
+    color: black;
+}
+.white{
+    color: #fff;
+}
+
+.title-text{
+    font-size: 2.5rem;
+    font-family: var(--roboto);
+    font-weight: bold;
+}
+
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 0.4s ease;
+}

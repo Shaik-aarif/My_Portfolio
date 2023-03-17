@@ -1,0 +1,30 @@
+
+
+
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+} 
+
+/* CSS Variables */
+
+
+:root{
+    --primary-color:#ff0000;
+    --primary-color2:#FF894C;
+    --secondary-color: #ffffff;
+    --text-color:#777777;
+    --border-color:#201f1f17;
+    --gradient-color:linear-gradient(90deg,#ff0000 0% ,#ff894c 100% );      
+    --shadow-color:0 10px 30px rgba(118 ,85 ,225,0.3);
+    --box-shadow:0 10px 30px rgba(57 ,56 ,61,0.205);
+
+
+    /* font variables */
+    --roboto:'Roboto',cursive;
+
+}
+ 
