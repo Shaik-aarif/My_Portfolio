@@ -5,6 +5,7 @@
 /* importing variables.css */
 @import url(./partials/_variables.css);
 
+
 /* importing global variables */
 /* @import url(./partials/_global.css); */
 
@@ -53,7 +54,7 @@
 } 
 
 p.para{
-    color: var(--text-color);
+    color: #777777;
 }
 
 .red{
@@ -354,7 +355,7 @@ p.para{
 }
 
 .profiles-area .owl-carousel .owl-dots .owl-dot.active span{
-    background: var(--primary-color);
+    background: red;
     width: 12px;
     height: 12px;
 }
@@ -378,7 +379,11 @@ p.para{
 }
 
 .contact-us-area .contact .contact-title h4{
-    font: normal 700 30px/ 30px var(--roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'roboto';
     color: whitesmoke;
 }
 
@@ -420,14 +425,18 @@ p.para{
 }
 
 .footer-area .social h5{
-    font: normal 700 30px/ 30px var(--roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'roboto';
 
 }
 
 footer.footer-area .social a > i{
     font-size:22px;
     padding: 2rem;
-    color: var(--primary-color);
+    color: red;
     transition: all 0.2s ease;
 }
 
