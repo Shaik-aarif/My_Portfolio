@@ -1,11 +1,11 @@
 
 /* ++++++++++++++++++++++++++++++++++++++++ global  css starts  ++++++++++++++++++++++++++++++++++++++++++*/
-html, body{
+/* html, body{
     margin: 0;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-} 
+}  */
 .title-text{
     font: normal bold 50px/40px ;
     font-size: 2.5rem;
@@ -58,7 +58,7 @@ p.para{
 }
 
 .header-space .navbar{
-    padding: 5px 10% 0 ;
+    padding: 5px  ;
 }
 
 .header-space .navbar .nav-link{
@@ -114,10 +114,7 @@ p.para{
     font-size: 1.1rem;
     font-weight: bold;
 }
-.container .banner-img{
-    padding-top: 4%;
-    padding-left: 100px;
-}
+
 .main .site-buttons a.p-button{
     background-color: red;
     color: white;
@@ -188,9 +185,7 @@ p.para{
 .about-space .paragraph{
     height: 300px;
 }
-.about-space button{
-   margin-left: 350px;
-}
+
 
 /*+++++++++++++++++++++++++ about section ends+++++++++++++++++++++++++ */
 
@@ -370,7 +365,6 @@ p.para{
 
 .contact-bgc{
     background-color: red;
-    
 }
 
 .contact-us-area{
@@ -445,6 +439,102 @@ footer.footer-area .social a:hover > i{
     transform: scale(1.24);
 }
 /*+++++++++++++++++++++++++footer  section ends+++++++++++++++++++++++++*/
+
+
+
+
+
+/*+++++++++++++++++++++++++Media Queries start  +++++++++++++++++++++++++*/
+@media screen and (max-width: 573px) {
+    
+
+    .container .title h4{
+       
+        line-height: 15px;
+    }
+    .container .banner-img img{
+       display: flex;
+       justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 50px;
+        
+        /* margin-left: auto;
+        margin-right: auto; */
+        transform: scale(0.75 , 0.75);
+        /* height: 50%;
+        width: 50%; */
+    }
+    .intro-img img{
+        display: none;
+    }
+    .about-title {
+        text-align: center;
+    }
+    .about-space{
+        padding: 0%;
+    }
+    .about-space .paragraph{
+        height: fit-content;
+    }
+    .skills-area .skills{
+        transform: scale(0.80);
+    }
+    .skills-area .skills:hover{
+        transform: scale( 1);
+    }
+    .project-area .button-group button{
+        line-height: 50px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase; 
+    }
+    .project-area .button-group button + button{
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    .project-area .row.grid{
+        transform: scale(0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-area img{
+        transform: scale(0.8);
+    }
+    .profiles-area .profile-item .profile-img img{
+        /* transform: scale(0.8); */
+        height: 110px;
+    }
+    .contact-bgc a{
+        background: whitesmoke;
+        color: #000;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-left: 77px;
+        transition: all 0.3s ease;
+    
+    }
+   
+  }
+
+  @media screen and (min-width : 573px){
+    .container .banner-img{
+        padding-top: 4%;
+        padding-left: 100px;
+    }
+  }
+  @media screen and (max-width : 407px){
+    .project-area span{
+        position: relative;
+        top: 23px;
+    }
+  }
+
+
+
+/*+++++++++++++++++++++++++Media Queries end+++++++++++++++++++++++++*/
+
+
 
 
 
